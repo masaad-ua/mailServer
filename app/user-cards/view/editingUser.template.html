@@ -1,0 +1,29 @@
+<div class="list-of-users">
+	<ul>
+		<li ng-repeat="list in listOfUser track by $index">
+
+			<div class="editing flexible column space-between">
+				<div class="flexible row">
+					<p ng-bind="list.dataUser.name" class="name-text"></p>
+					<button data-field="name" ng-click="editing({el:$index , obj:$event })" class="editing-button">edit Name</button>
+					<!--<div class="editing-filed" ng-if="list.dataUser.showEditName" >-->
+					<div class="editing-filed" ng-if="showEditing['showEditName' + $index]" >
+						<input type="text" ng-value="list.dataUser.name" ng-model="list.dataUser.changeName" class="text-field">
+						<button data-field="name"  ng-click="save({el:$index, obj:$event})">save</button>
+					</div>
+
+				</div>
+				<div class="flexible row">
+					<p ng-bind="list.dataUser.lastName" class="name-text"></p>
+					<button  data-field="lastName" ng-click="editing({el:$index , obj:$event })" class="editing-button">edit LastName </button>
+					<div class="editing-filed"  ng-if="showEditing[('showEditLastName' + $index)]" >
+						<input type="text" ng-value="list.dataUser.lastName" ng-model="list.dataUser.changeLastName" class="text-field">
+						<button data-field="lastName" ng-click="save({el:$index, obj:$event})">save</button>
+					</div>
+				</div>
+				<button ng-click="delete({el:$index})" class="delete-button absolute md-button md-raised">delete this user</button>
+			</div>
+
+		</li>
+	</ul>
+</div>

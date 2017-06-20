@@ -1,0 +1,17 @@
+.input-wrapper{
+	margin-bottom: 20px;
+}
+.text-field::-webkit-input-placeholder{
+	color:  #dedede;
+	font-weight: 300;
+}
+/************************/
+.label{
+	width: 200px;
+	display: inline-block;
+}
+/**********************/
+.submit-logo{
+	background: red;
+	color: white;
+}

@@ -1,0 +1,20 @@
+<form class="form-signin">
+	<h2 class="form-signin-heading">Please sign in</h2>
+
+	<div class="input-wrapper">
+		<label for="inputEmail" class="label">Email address</label>
+		<input type="email" id="inputEmail" class="form-control text-field" placeholder="Email address" required="" autofocus="" ng-model="log.user">
+	</div>
+	<div class="input-wrapper">
+		<label for="inputPassword" class="label">Password</label>
+		<input type="password" id="inputPassword" class="form-control text-field" placeholder="Password" required="" ng-model="log.password">
+	</div>
+
+
+	<div class="checkbox">
+		<label>
+			<input type="checkbox" value="remember-me"> Remember me
+		</label>
+	</div>
+	<button class="md-button md-raised submit-logo" type="submit" ng-click="callectDate()" >Sign in</button>
+</form >

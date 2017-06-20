@@ -1,0 +1,28 @@
+<li ng-repeat="letter in mp.letterSorted"  ng-if="mp.showList" class="flexible row vertical-center">
+	<span class="title">{{letter.from}}</span>
+	<span class="email" ng-click="mp.showCurrentLetter($event)" data-id="{{letter.id}}">{{letter.email}}</span>
+</li>
+
+<div class="panel panel-info" ng-if="mp.showCurrent">
+	<div class="panel-heading">
+		<h3 class="panel-title">{{mp.currentLetter.from}}</h3>
+	</div>
+	<div class="panel-body">
+		<div class="row">
+			<div >
+				<table class="table table-user-information">
+					<tbody>
+						<tr>
+							<td>Адрес:</td>
+							<td>{{mp.currentLetter.email}}</td>
+						</tr>
+						<tr>
+							<td>Текс:</td>
+							<td>{{mp.currentLetter.body}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>

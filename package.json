@@ -1,0 +1,12 @@
+{
+  "name": "home2.1mail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start",
+    "postinstall": "bower install"
+  },
+  "author": "",
+  "license": "ISC"
+}

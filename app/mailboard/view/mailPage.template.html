@@ -1,0 +1,13 @@
+<section class="flexible row">
+	<div class="mail-buttons">
+		<button-mail></button-mail>
+	</div>
+	<div class="mail-address">
+		<list-letter></list-letter>
+	</div>
+</section>
+
+<section>
+	<add-user adding="mp.addUser(name,lastName)"></add-user>
+	<edit-user editing="mp.editingUser(el,obj)" list="mp.listUserLS" save="mp.saveUser(el,obj)" show-editing = "mp.showEditingObj" delete="mp.deleteUser(el)" ></edit-user>
+</section>

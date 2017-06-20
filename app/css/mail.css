@@ -1,0 +1,133 @@
+
+/**************/
+.mail-buttons{
+	width: 200px;
+	height: 300px;
+	/* -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); */
+	/* box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); */
+}
+
+section.col-md-3.mail-buttons {}
+.mail-address{
+	/* width: 600px; */
+	flex-grow: 1;
+	-webkit-box-flex: 1;
+}
+.mail-container list-letter {
+	display: block;
+	/* margin-left: 30px; */
+	margin-top: 20px;
+	/* border-top: 1px solid #dedede; */
+}
+/**************/
+.mail-buttons button-mail{
+	display: block;
+	height: inherit;
+	box-sizing: border-box;
+}
+
+/**************/
+.mail-address list-letter li{
+	border-bottom: 1px solid #dedede;
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+}
+.mail-address list-letter li:first-of-type{
+	border-top: 1px solid #dedede;
+}
+.list-buttons{
+	padding-left: 20px;
+	padding-top: 20px;
+	height: 170px;
+	margin: 0;
+	display: flex;
+	display: -webkit-box;
+	display:-ms-flexbox;
+	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-ms-flex-direction: row;
+	justify-content: space-between;
+	-webkit-box-pack:justify;
+}
+
+.panel-info{
+	border:  1px solid #dedede;
+}
+/****************/
+.list-buttons li {
+    /* background: rgba(200, 200, 200, 0.7); */
+    width: 100px;
+    height: initial;
+    list-style-type: none;
+}
+.list-buttons li a{
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	display: inline-block;
+	color: white;
+	text-transform: initial;
+	background: #168de2;
+}
+
+
+.list-of-users ul{
+	padding-left: 0;
+}
+
+/****************/
+.list-of-users li:first-of-type{
+	border-top: 1px solid #dedede;
+}
+.list-of-users li{
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #dedede;
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+}
+.table-user-information tr td:first-of-type{
+	width: 70px;
+}
+.table-user-information tr:nth-of-type(2) td:first-of-type{
+	vertical-align: top;
+}
+.table-user-information tr:nth-of-type(2) td:nth-of-type(2){
+	font-weight: 300;
+}
+
+/****************/
+.editing{
+	position: relative;
+	height: 60px;
+}
+
+/***************/
+.editing-filed{
+	/* pointer-events: none; */
+}
+/***************/
+.delete-button{
+	top: 50%;
+	left: 600px;
+	transform: translateY(-50%);
+	background: red;
+	color: white;
+	/* pointer-events: none; */
+	margin: 0px;
+}
+/***************/
+.name-text{
+	display: inline-block;
+	width: 185px;
+	box-sizing: border-box;
+	margin: 0;
+}
+.editing-button{
+	height: 25px;
+	width: 140px;
+	margin-right: 10px;
+}
+
+
