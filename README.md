@@ -5,13 +5,9 @@ with possibility to login in server and adding/deleting users.
 
 ## DEMO
 
-The result of my job you can see here, using for log nickname:
+The result of my job you can see here, using for log:
 
-```nickname
-    user@mail.ru
-```
+nickname : user@mail.ru
+password : admin
 
-```password
-    admin
-```
 http://mynameismatthieu.com/WOW/

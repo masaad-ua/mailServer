@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mailPost">
+<head>
+	<meta charset="UTF-8">
+	<title>Post Service</title>
+	<!--<link href="bootstrap.min.css" rel="stylesheet">-->
+	<link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+	<link href="app/css/main.css" rel="stylesheet">
+	<link href="app/css/login.css" rel="stylesheet">
+	<link href="app/css/mail.css" rel="stylesheet">
+
+</head>
+<body>
+	<main class="container row main-container" ng-controller="mailController as mp">
+
+		<ui-view></ui-view>
+
+
+
+
+
+		<!--<section>-->
+			<!--<add-user adding="mp.addUser(name,lastName)"></add-user>-->
+		<!--</section>-->
+		<!--<div ng-click="mp.clickMe()" style="border: 1px solid red; height: 100px; width: 100px; position: absolute; top: 600px; background: red; display: none"></div>-->
+
+		<!--<section>-->
+			<!--<edit-user list = "mp.listUserLS" editing = "mp.editingUser(el)"></edit-user>-->
+		<!--</section>-->
+
+		<!--<save-it>-->
+			<!--&lt;!&ndash;<input ng-value="username" type="text">&ndash;&gt;-->
+
+		<!--</save-it>-->
+
+	</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-mocks.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+	<script src="bower_components/angular-material/angular-material.js"></script>
+
+	<script src="bower_components/babel/browser.js"></script>
+	<script src="app/app.module.js"></script>
+	<!--Контролерры-->
+	<script src="app/mailboard/mailPost.controller.js"></script>
+
+	<!--Сервисы-->
+	<script src= "app/auth/check.service.js"></script>
+
+	<!--Директивы-->
+	<script src= "app/auth/loginPage.directive.js"></script>
+
+	<script src= "app/mailboard/mailPage.directive.js"></script>
+	<script src= "app/mailboard/buttonMail.directive.js"></script>
+	<script src= "app/mailboard/listLetter.directive.js"></script>
+
+	<script src= "app/user-cards/addUser.directive.js"></script>
+	<script src= "app/user-cards/editUser.directive.js"></script>
+	<script src= "app/user-cards/saveIt.directive.js"></script>
+
+
+
+
+</body>
+
+</html>
