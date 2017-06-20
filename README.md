@@ -7,7 +7,7 @@ with possibility to login in server and adding/deleting users.
 
 The result of my job you can see here, using for log:
 
-nickname : user@mail.ru
-password : admin
+- nickname : user@mail.ru
+- password : admin
 
-http://mynameismatthieu.com/WOW/
+https://masaad-ua.github.io/mailServer/.
